@@ -20,11 +20,7 @@
           <a>Book Spot</a>
           <ul>
             <li><a href="online-booking.php">Online Booking</a></li>
-            <li><a href="on-street-booking.php">On-street Parking</a></li>
-			<li><a href="off-street-parking.php">Off-street Parking</a></li>
-            <li><a href="payment-methods.php">Payment Methods</a></li>
-            <li><a href="parking-personnel.php">Park Attendants</a></li>
-			<li><a href="security.php">Security</a></li>
+            
           </ul>
         </li>
         <li class="dropdown">
