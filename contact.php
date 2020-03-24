@@ -7,9 +7,8 @@
 </head>
 <body>
 <section class="HomeKisii">
-<p>We are at your service. Call our support team any time as from 7.00am - 10.00pm</p>
-<P> Call +254729667794 or +254715160551 </p>
-<p> or e-mails us :ibrahimond75@yahoo.com or kisiicounty.go.ke</p>
+<P> Telephone: 016896892 </p>
+<p>Email: info@citycarparks.ie</p>
 </section>
 <section class="kisii-bottom">
 <p>Park your car in city center</p>
