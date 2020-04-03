@@ -5,6 +5,14 @@
 <title>Car Parking</title>
 <link rel="shortcut icon" href="../favicon.ico"> 
 <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+<!--   This is responsive bootstrap
+ <link rel="stylesheet"   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+-->  
+
+
 </head>
 
 <body>
@@ -19,7 +27,8 @@
         <li class="dropdown">
           <a>Book Spot</a>
           <ul>
-            <li><a href="online-booking.php">Online Booking</a></li>
+            <li><a href="onlineBooking.php">Online Booking</a></li>
+			<li><a href="manageBooking.php">Manage Booking</a></li>
             
           </ul>
         </li>
