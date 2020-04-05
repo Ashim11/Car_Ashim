@@ -1025,7 +1025,7 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit","qid":"2","text":"Subm
               Contact Us
             </h2>
             <div id="subHeader_27" class="form-subHeader">
-              We&#x27;d love to help. Send us your questions!
+              Send us your questions!
             </div>
           </div>
         </div>

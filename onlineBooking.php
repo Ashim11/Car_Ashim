@@ -1,4 +1,4 @@
-
+<?php include 'main.php';?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -280,7 +280,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Car Rent
       </li>
       
 	  
-	  -->
+	 
 	  
 	  
 	 
@@ -361,6 +361,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Car Rent
             </span>
           </div>
         </li>
+		
         <li class="form-line jf-required" data-type="control_fullname" id="id_10">
           <label class="form-label form-label-left" id="label_10" for="prefix_10">
             Full Name
@@ -370,10 +371,8 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Car Rent
           </label>
           <div id="cid_10" class="form-input jf-required">
             <div data-wrapper-react="true" class="extended">
-              <span class="form-sub-label-container " style="vertical-align:top" data-input-type="prefix">
-                <input type="text" id="prefix_10" name="q10_fullName10[prefix]" class="form-textbox" size="4" value="" data-component="prefix" aria-labelledby="label_10 sublabel_10_prefix" required="" />
-                <label class="form-sub-label" for="prefix_10" id="sublabel_10_prefix" style="min-height:13px" aria-hidden="false"> Prefix </label>
-              </span>
+              
+			  <!--First and last name Div tag -->
               <span class="form-sub-label-container " style="vertical-align:top" data-input-type="first">
                 <input type="text" id="first_10" name="q10_fullName10[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_10 sublabel_10_first" required="" />
                 <label class="form-sub-label" for="first_10" id="sublabel_10_first" style="min-height:13px" aria-hidden="false"> First Name </label>
@@ -396,7 +395,8 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Car Rent
             <input type="email" id="input_11" name="q11_email11" class="form-textbox validate[required, Email]" size="30" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_11" required="" />
           </div>
         </li>
-        <li class="form-line jf-required" data-type="control_phone" id="id_12">
+        
+		<li class="form-line jf-required" data-type="control_phone" id="id_12">
           <label class="form-label form-label-left form-label-auto" id="label_12" for="input_12_area">
             Phone Number
             <span class="form-required">
@@ -419,84 +419,8 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Car Rent
             </div>
           </div>
         </li>
-        <li class="form-line form-line-column form-col-1 jf-required" data-type="control_birthdate" id="id_13">
-          <label class="form-label form-label-top" id="label_13" for="input_13">
-            Birth Date
-            <span class="form-required">
-              *
-            </span>
-          </label>
-          <div id="cid_13" class="form-input-wide jf-required">
-            <div data-wrapper-react="true">
-              <span class="form-sub-label-container " style="vertical-align:top">
-                <select name="q13_birthDate13[month]" id="input_13_month" class="form-dropdown validate[required]" data-component="birthdate-month" aria-labelledby="label_13 sublabel_13_month">
-                  <option>  </option>
-                  <option value="January"> January </option>
-                  <option value="February"> February </option>
-                  <option value="March"> March </option>
-                  <option value="April"> April </option>
-                  <option value="May"> May </option>
-                  <option value="June"> June </option>
-                  <option value="July"> July </option>
-                  <option value="August"> August </option>
-                  <option value="September"> September </option>
-                  <option value="October"> October </option>
-                  <option value="November"> November </option>
-                  <option value="December"> December </option>
-                </select>
-                <label class="form-sub-label" for="input_13_month" id="sublabel_13_month" style="min-height:13px" aria-hidden="false"> Month </label>
-              </span>
-              <span class="form-sub-label-container " style="vertical-align:top">
-                <select name="q13_birthDate13[day]" id="input_13_day" class="form-dropdown validate[required]" data-component="birthdate-day" aria-labelledby="label_13 sublabel_13_day">
-                  <option>  </option>
-                  <option value="1"> 1 </option>
-                  <option value="2"> 2 </option>
-                  <option value="3"> 3 </option>
-                  <option value="4"> 4 </option>
-                  <option value="5"> 5 </option>
-                  <option value="6"> 6 </option>
-                  <option value="7"> 7 </option>
-                  <option value="8"> 8 </option>
-                  <option value="9"> 9 </option>
-                  <option value="10"> 10 </option>
-                  <option value="11"> 11 </option>
-                  <option value="12"> 12 </option>
-                  <option value="13"> 13 </option>
-                  <option value="14"> 14 </option>
-                  <option value="15"> 15 </option>
-                  <option value="16"> 16 </option>
-                  <option value="17"> 17 </option>
-                  <option value="18"> 18 </option>
-                  <option value="19"> 19 </option>
-                  <option value="20"> 20 </option>
-                  <option value="21"> 21 </option>
-                  <option value="22"> 22 </option>
-                  <option value="23"> 23 </option>
-                  <option value="24"> 24 </option>
-                  <option value="25"> 25 </option>
-                  <option value="26"> 26 </option>
-                  <option value="27"> 27 </option>
-                  <option value="28"> 28 </option>
-                  <option value="29"> 29 </option>
-                  <option value="30"> 30 </option>
-                  <option value="31"> 31 </option>
-                </select>
-                <label class="form-sub-label" for="input_13_day" id="sublabel_13_day" style="min-height:13px" aria-hidden="false"> Day </label>
-              </span>
-              <span class="form-sub-label-container " style="vertical-align:top">
-                <select name="q13_birthDate13[year]" id="input_13_year" class="form-dropdown validate[required]" data-component="birthdate-year" aria-labelledby="label_13 sublabel_13_year">
-                  <option>  </option>
-                  <option value="2020"> 2020 </option>
-                  <option value="2019"> 2019 </option>
-                  <option value="2018"> 2018 </option>
-                  <option value="2017"> 2017 </option>
-                  <option value="2016"> 2016 </option>
-
-                </select>
-                <label class="form-sub-label" for="input_13_year" id="sublabel_13_year" style="min-height:13px" aria-hidden="false"> Year </label>
-              </span>
-            </div>
-          </div>
+        
+		
         </li>
        
 
