@@ -28,12 +28,12 @@
           <a>Book Spot</a>
           <ul>
             <li><a href="onlineBooking.php">Online Booking</a></li>
-			<li><a href="manageBooking.php">Manage Booking</a></li>
+			<li><a href="manageBooking.php">Manage Booking</a></li>   
             
           </ul>
         </li>
         <li class="dropdown">
-          <a href="">Cancel Booking</a>
+          <a href="cancel.php">Cancel Booking</a>
           
         </li>
 		<li><a href="parkoffer.php">Special Offer</a></li> 	
