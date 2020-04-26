@@ -24,13 +24,13 @@
 					<?php if($_SESSION['user_details']['user_level_id'] == 1) {?>
 						<li><a href="#">Adminstration</a>
 							<ul>
-								<li><a href="">Add Parking Space</a></li>	
-								<li><a href="">Parking Space Report</a></li>
-								<li><a href="">Parking Report</a></li>	
-								<li><a href="">Assign Paking</a></li>
-								<li><a href="">Add System User</a></li>
-								<li><a href="">System User Report</a></li>									
-								<li><a href="">Search Car</a></li>
+								<li><a href="space.php">Add Parking Space</a></li>	
+								<li><a href="space-report.php">Parking Space Report</a></li>
+								<li><a href="parking-report.php">Parking Report</a></li>	
+								<li><a href="list-space.php">Assign Paking</a></li>
+								<li><a href="user.php">Add System User</a></li>
+								<li><a href="user-report.php">System User Report</a></li>									
+								<li><a href="search-parking.php">Search Car</a></li>
 							</ul>
 						</li>
 						
