@@ -1,23 +1,4 @@
-Php Form Builder - Bootstrap Booking Form
-Php Form Builder
-Php Form Builder
 
-Please fill the form below
-Full Name: * 
-First name
-Last name
-E-Mail: * 
-Phone: *
-085 012 3456
-Number of Guests: * 
-Date / Time: * 
-Date
-Time
-Reservation Type * 
-Please tell more ...
-Any Special Request ? 
-Bootstrap Booking Form - How to create PHP forms easily Source Code
-×
 <?php
 use phpformbuilder\Form;
 use phpformbuilder\Validator\Validator;
