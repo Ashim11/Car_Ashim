@@ -7,6 +7,23 @@ if($_REQUEST[space_id])
 		$data=mysql_fetch_assoc($rs);
 	}
 ?>
+<script>
+
+jQuery(function() {
+	jQuery( "#space_from_date" ).datepicker({
+	  changeMonth: true,
+	  changeYear: true,
+	   yearRange: "0:+1",
+	   dateFormat: 'd MM,yy'
+	});
+	jQuery( "#space_to_date" ).datepicker({
+	  changeMonth: true,
+	  changeYear: true,
+	   yearRange: "0:+1",
+	   dateFormat: 'd MM,yy'
+	});
+});
+</script> 
 <div class="crumb">
     </div>
     <div class="clear"></div>
@@ -17,7 +34,7 @@ if($_REQUEST[space_id])
 				<?php if($_REQUEST['msg']) { ?>
 					<div class="msg"><?=$_REQUEST['msg']?></div>
 				<?php } ?>
-				<form action="" enctype="multipart/form-data" method="post" name="frm_space">
+				<form action="lib/space.php" enctype="multipart/form-data" method="post" name="frm_space">
 					<ul class="forms">
 						<li class="txt">Title</li>
 						<li class="inputfield"><input name="space_title" type="text" class="bar" required value="<?=$data[space_title]?>"/></li>

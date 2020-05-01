@@ -1,42 +1,69 @@
 <?php 
 	include_once("includes/header.php"); 
-	if($_REQUEST[parking_id])
-	{
-		$SQL="SELECT * FROM `parking` WHERE parking_id = $_REQUEST[parking_id]";
-		$rs=mysql_query($SQL) or die(mysql_error());
-		$data=mysql_fetch_assoc($rs);
-	}
-	if($_REQUEST['space_id'])
-	{
-		$data['parking_space_id'] = $_REQUEST['space_id'];
-		$data['parking_slot_number'] = $_REQUEST['slot_no'];
-	}
+	include_once("includes/db_connect.php"); 
+	$SQL="SELECT * FROM `space`";
+	$rs=mysql_query($SQL) or die(mysql_error());
 ?>
+<script>
+function delete_space(space_id)
+{
+	if(confirm("Do you want to delete the parking space?"))
+	{
+		this.document.frm_space.space_id.value=space_id;
+		this.document.frm_space.act.value="delete_space";
+		this.document.frm_space.submit();
+	}
+}
+</script>
 	<div class="crumb">
     </div>
     <div class="clear"></div>
 	<div id="content_sec">
-		<div class="col1">
-			<div class="contact">
-				<h4 class="heading colr">Search for Car</h4>
-				<?php if($_REQUEST['msg']) { ?>
-					<div class="msg"><?=$_REQUEST['msg']?></div>
-				<?php } ?>
-				<form action="parking.php" enctype="multipart/form-data" method="post" name="frm_parking">
-					<ul class="forms">
-						<li class="txt">Car No</li>
-						<li class="inputfield"><input name="parking_car_no" type="text" class="bar" required value="<?=$data[parking_car_no]?>"/></li>
-					</ul>
-					<div class="clear"></div>
-					<ul class="forms">
-						<li class="txt">&nbsp;</li>
-						<li class="textfield"><input type="submit" value="Submit" class="simplebtn"></li>
-						<li class="textfield"><input type="reset" value="Reset" class="resetbtn"></li>
-					</ul>
-					<input type="hidden" name="act" value="save_parking">
-					<input type="hidden" name="parking_id" value="<?=$data[parking_id]?>">
-				</form>
-			</div>
+		<div class="col1" style="width:100%">
+		<div class="contact">
+			<h4 class="heading colr">Parking Space Reports</h4>
+			<?php
+			if($_REQUEST['msg']) { 
+			?>
+				<div class="msg"><?=$_REQUEST['msg']?></div>
+			<?php
+			}
+			if(mysql_num_rows($rs)) {
+			?>
+			<form name="frm_space" action="lib/space.php" method="post">
+				<div class="static">
+					<table style="width:100%">
+					  <tbody>
+					  <tr class="tablehead bold">
+						<td scope="col">ID</td>
+						<td scope="col">Name</td>
+						<td scope="col">Capacity</td>
+						<td scope="col">Action</td>
+					  </tr>
+					<?php 
+					$sr_no=1;
+					while($data = mysql_fetch_assoc($rs))
+					{
+					?>
+					  <tr>
+						<td><?=$data[space_id]?></td>
+						<td><?=$data[space_title]?></td>
+						<td><?=$data[space_total_parkings]?> Parking Slots</td>
+						<td style="text-align:center">
+						<a href="space.php?space_id=<?php echo $data[space_id] ?>">Edit</a> | 	
+						<a href="Javascript:delete_space(<?=$data[space_id]?>)">Delete</a></td>
+					  </tr>
+					<?php } ?>
+					</tbody>
+					</table>
+				</div>
+				<input type="hidden" name="act" />
+				<input type="hidden" name="space_id" />
+			</form>
+			<?php } else {?>
+				<div class="msg">You Space Added Yet.</div>
+			<?php } ?>
+		</div>
 		</div>
 	</div>
 <?php include_once("includes/footer.php"); ?> 

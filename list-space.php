@@ -14,6 +14,7 @@ color:#101746;
 font-weight:bold;
 padding-left:10px;
 }
+</style>
 	<div class="crumb">
     </div>
     <div class="clear"></div>

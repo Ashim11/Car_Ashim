@@ -7,6 +7,30 @@
 		$data=mysql_fetch_assoc($rs);
 	}
 ?> 
+<script>
+
+jQuery(function() {
+	jQuery( "#user_dob" ).datepicker({
+	  changeMonth: true,
+	  changeYear: true,
+	   yearRange: "-65:-10",
+	   dateFormat: 'd MM,yy'
+	});
+	jQuery('#frm_user').validate({
+		rules: {
+			user_confirm_password: {
+				equalTo: '#user_password'
+			}
+		}
+	});
+});
+function validateForm(obj) {
+	if(validateEmail(obj.user_email.value))
+		return true;
+	jQuery('#error-msg').show();
+	return false;
+}
+</script>
 
 <div class="crumb">
     </div>

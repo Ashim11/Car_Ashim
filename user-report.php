@@ -5,6 +5,18 @@
 	$rs=mysql_query($SQL) or die(mysql_error());
 	global $SERVER_PATH;
 ?>
+<script>
+function delete_user(user_id)
+{
+	if(confirm("Do you want to delete the user?"))
+	{
+		this.document.frm_user.user_id.value=user_id;
+		this.document.frm_user.act.value="delete_user";
+		this.document.frm_user.submit();
+	}
+}
+</script>
+
 <div class="crumb">
     </div>
     <div class="clear"></div>

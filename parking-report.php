@@ -4,7 +4,17 @@
 	$SQL="SELECT * FROM `parking`,`space` WHERE parking_space_id = space_id";
 	$rs=mysql_query($SQL) or die(mysql_error());
 ?>
-
+<script>
+function delete_parking(parking_id)
+{
+	if(confirm("Do you want to delete the parking?"))
+	{
+		this.document.frm_parking.parking_id.value=parking_id;
+		this.document.frm_parking.act.value="delete_parking";
+		this.document.frm_parking.submit();
+	}
+}
+</script>
 	<div class="crumb">
     </div>
     <div class="clear"></div>
@@ -20,7 +30,7 @@
 			}
 			if(mysql_num_rows($rs)) {
 			?>
-			<form name="frm_parking" action="" method="post">
+			<form name="frm_parking" action="lib/parking.php" method="post">
 				<div class="static">
 					<table style="width:100%">
 					  <tbody>
