@@ -56,7 +56,7 @@
 					D01<br />
 					<br /><br />
 					+35 (0)1234 444789<br />
-					<a href="">info@carpark.ie</a><br />
+					<a href="">info@easyquickpark.ie</a><br />
 				</p>
 			</div>
 		</div>
