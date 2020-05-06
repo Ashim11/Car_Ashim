@@ -4,6 +4,19 @@
 	$SQL="SELECT * FROM `parking`,`space` WHERE parking_space_id = space_id";
 	$rs=mysql_query($SQL) or die(mysql_error());
 ?>
+
+<?php
+#STYLE
+echo '<style>';
+
+#BODY STYLE
+
+echo 'body{background-image: url("./images/car_new/back2.jpg");}';
+
+#END STYLE
+echo '</style>';
+?>
+
 <script>
 function delete_parking(parking_id)
 {

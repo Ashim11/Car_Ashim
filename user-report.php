@@ -5,6 +5,20 @@
 	$rs=mysql_query($SQL) or die(mysql_error());
 	global $SERVER_PATH;
 ?>
+
+<?php
+#STYLE
+echo '<style>';
+
+#BODY STYLE
+
+echo 'body{background-image: url("./images/car_new/back2.jpg");}';
+
+
+#END STYLE
+echo '</style>';
+?>
+
 <script>
 function delete_user(user_id)
 {

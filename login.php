@@ -7,6 +7,21 @@
 		$data=mysql_fetch_assoc($rs);
 	}
 ?> 
+
+<?php
+#STYLE
+echo '<style>';
+
+#BODY STYLE
+
+echo 'body{background-image: url("./images/car_new/back2.jpg");}';
+
+
+
+#END STYLE
+echo '</style>';
+?>
+
 	<div class="crumb">
     </div>
     <div class="clear"></div>

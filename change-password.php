@@ -1,4 +1,19 @@
 <?php include_once("includes/header.php"); ?> 
+
+<?php
+#STYLE
+echo '<style>';
+
+#BODY STYLE
+
+echo 'body{background-image: url("./images/car_new/back2.jpg");}';
+
+#echo 'body{background:#31708f;}';
+
+#END STYLE
+echo '</style>';
+?>
+
 	<div class="crumb">
     </div>
     <div class="clear"></div>

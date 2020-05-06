@@ -5,6 +5,21 @@
 	$rs=mysql_query($SQL) or die(mysql_error());
 	$data = mysql_fetch_assoc($rs);
 ?>
+
+<?php
+#STYLE
+echo '<style>';
+
+#BODY STYLE
+
+echo 'body{background-image: url("./images/car_new/back2.jpg");}';
+
+
+
+#END STYLE
+echo '</style>';
+?>
+
 <style>
 .parking_space {
 float:left; 

@@ -1,8 +1,23 @@
 <?php 
 include_once("includes/header.php"); 
-
+include_once("includes/db_connect.php"); 
 global $SERVER_PATH;
 ?> 
+
+<?php
+#STYLE
+echo '<style>';
+
+#BODY STYLE
+
+echo 'body{background-image: url("./images/car_new/back2.jpg");}';
+
+
+
+#END STYLE
+echo '</style>';
+?>
+
 <div id="banner">
     	<div class="left">
         	<div class="anythingSlider">
