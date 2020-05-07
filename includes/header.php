@@ -70,7 +70,8 @@ echo '</style>';
 <div id="wrapper_sec">
 	<div id="masthead">
     	<div class="logo">
-        	<a href="./index.php" class="logo-custom">EasyQuickPark</a>
+			<a href="./index.php" class="logo-custom">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EasyQuickPark</a>
+
         </div>
         <div class="slogan"></div>
         <div class="clear"></div>
